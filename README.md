@@ -99,3 +99,34 @@ SMOD modbus(getfunc) >exploit
 [+] Function Code 23(Read/Write Multiple Registers) is supported.
 SMOD modbus(getfunc) >
 ```
+
+Fuzzing Read Coils Function 
+```
+SMOD >use modbus/function/readCoils
+SMOD modbus(readCoils) >show options
+ Name       Current Setting  Required  Description                                 
+ ----       ---------------  --------  -----------                                 
+ Output     True             False     The stdout save in output directory         
+ Quantity   0x0001           True      Registers Values.                           
+ RHOSTS                      True      The target address range or CIDR identifier 
+ RPORT      502              False     The port number for modbus protocol         
+ StartAddr  0x0000           True      Start Address.                              
+ Threads    1                False     The number of concurrent threads            
+ UID        None             True      Modbus Slave UID.                           
+SMOD modbus(readCoils) >set RHOSTS 192.168.1.6
+SMOD modbus(readCoils) >set UID 10
+SMOD modbus(readCoils) >exploit 
+[+] Module Read Coils Function Start
+[+] Connecting to 192.168.1.6
+[+] Response is :
+###[ ModbusADU ]###
+  transId   = 0x2
+  protoId   = 0x0
+  len       = 0x4
+  unitId    = 0xa
+###[ Read Coils Answer ]###
+     funcCode  = 0x1
+     byteCount = 1L
+     coilStatus= [0]
+SMOD modbus(readCoils) >
+```
