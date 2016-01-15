@@ -36,7 +36,8 @@ SMOD >help
  use      Selects a module by name                         
 SMOD >show modules
  Modules                              Description                             
- -------                              -----------                             
+ -------                              -----------        
+ modbus/dos/writeSingleCoils          DOS With Write Single Coil Function 
  modbus/function/readCoils            Fuzzing Read Coils Function             
  modbus/function/readDiscreteInput    Fuzzing Read Discrete Inputs Function   
  modbus/function/readHoldingRegister  Fuzzing Read Holding Registers Function 
