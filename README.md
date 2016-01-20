@@ -24,6 +24,13 @@ root@kali:~/smod# python smod.py
          \  (xx)\_______
             (__)\       )\/\
              U  ||----w |
+                ||     ||
+          --=[MODBUS Penetration Test FrameWork
+       --+--=[Version : 1.0.0
+       --+--=[Modules : 12
+       --+--=[Coder   : Farzin Enddo
+          --=[github  : www.github.com/enddo
+
 SMOD >help
  Command  Description                                      
  -------  -----------                                      
@@ -37,16 +44,18 @@ SMOD >help
 SMOD >show modules
  Modules                              Description                             
  -------                              -----------        
- modbus/dos/writeSingleCoils          DOS With Write Single Coil Function 
+ modbus/dos/writeSingleCoils          DOS With Write Single Coil Function     
+ modbus/dos/writeSingleRegister       DOS Write Single Register Function      
  modbus/function/readCoils            Fuzzing Read Coils Function             
  modbus/function/readDiscreteInput    Fuzzing Read Discrete Inputs Function   
+ modbus/function/readExceptionStatus  Fuzzing Read Exception Status Function  
  modbus/function/readHoldingRegister  Fuzzing Read Holding Registers Function 
  modbus/function/readInputRegister    Fuzzing Read Input Registers Function   
  modbus/function/writeSingleCoils     Fuzzing Write Single Coil Function      
  modbus/function/writeSingleRegister  Fuzzing Write Single Register Function  
  modbus/scanner/discover              Check Modbus Protocols                  
- modbus/scanner/getfunc               Enumeration Function on Modbus           
- modbus/scanner/uid                   Brute Force UID                         
+ modbus/scanner/getfunc               Enumeration Function on Modbus          
+ modbus/scanner/uid                   Brute Force UID                          
 SMOD >
 ```
 Brute Force Modbus UID
