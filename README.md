@@ -27,7 +27,7 @@ root@kali:~/smod# python smod.py
                 ||     ||
           --=[MODBUS Penetration Test FrameWork
        --+--=[Version : 1.0.0
-       --+--=[Modules : 12
+       --+--=[Modules : 13
        --+--=[Coder   : Farzin Enddo
           --=[github  : www.github.com/enddo
 
@@ -43,7 +43,8 @@ SMOD >help
  use      Selects a module by name                         
 SMOD >show modules
  Modules                              Description                             
- -------                              -----------        
+ -------                              -----------
+ modbus/dos/galilRIO                  DOS Galil RIO-47100 
  modbus/dos/writeSingleCoils          DOS With Write Single Coil Function     
  modbus/dos/writeSingleRegister       DOS Write Single Register Function      
  modbus/function/readCoils            Fuzzing Read Coils Function             
