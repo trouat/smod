@@ -26,8 +26,8 @@ root@kali:~/smod# python smod.py
              U  ||----w |
                 ||     ||
           --=[MODBUS Penetration Test FrameWork
-       --+--=[Version : 1.0.0
-       --+--=[Modules : 13
+       --+--=[Version : 1.0.1
+       --+--=[Modules : 14
        --+--=[Coder   : Farzin Enddo
           --=[github  : www.github.com/enddo
 
@@ -56,7 +56,8 @@ SMOD >show modules
  modbus/function/writeSingleRegister  Fuzzing Write Single Register Function  
  modbus/scanner/discover              Check Modbus Protocols                  
  modbus/scanner/getfunc               Enumeration Function on Modbus          
- modbus/scanner/uid                   Brute Force UID                          
+ modbus/scanner/uid                   Brute Force UID      
+ modbus/sniff/arp                     Arp Poisoning
 SMOD >
 ```
 Brute Force Modbus UID
