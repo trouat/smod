@@ -26,7 +26,7 @@ root@kali:~/smod# python smod.py
              U  ||----w |
                 ||     ||
           --=[MODBUS Penetration Test FrameWork
-       --+--=[Version : 1.0.1
+       --+--=[Version : 1.0.2
        --+--=[Modules : 14
        --+--=[Coder   : Farzin Enddo
           --=[github  : www.github.com/enddo
