@@ -91,7 +91,7 @@ class Module:
 			self.printLine('[-] Failed to get Slave MAC',bcolors.WARNING)
 			os._exit(0)
 		else:
-			self.printLine('[+] Master MAC: '+target_mac,bcolors.OKGREEN)
+			self.printLine('[+] Slave MAC: '+target_mac,bcolors.OKGREEN)
 		
 		def signal_handler(signal, frame):
 		        restore_target(gatway_ip,gatway_mac,target_ip,target_mac)
