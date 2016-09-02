@@ -37,11 +37,13 @@ class Module:
 				THREADS.append(thread)
 			else:
 				break
-			for thread in THREADS:
-				thread.join()
 			if(down):
-				self.printLine('[-] Modbus is not running on : ' + self.options['RHOST'][0],bcolors.WARNING)
 				break
+
+		for thread in THREADS:
+			thread.join()
+		if(down):
+			self.printLine('[-] Modbus is not running on : ' + self.options['RHOST'][0],bcolors.WARNING)
 		if(self.options['Output'][0]):
 			open(mainPath + '/Output/' + moduleName + '_' + self.options['RHOST'][0].replace('/','_') + '.txt','a').write('='*30 + '\n' + self.output + '\n\n')
 		self.output 	= ''
@@ -57,6 +59,8 @@ class Module:
 
 	def do(self,ip):
 		global down
+		if(down == True):
+			return None
 		while True:
 			c = connectToTarget(ip,self.options['RPORT'][0])
 			if(c == None):
