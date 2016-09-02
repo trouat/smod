@@ -179,7 +179,8 @@ def mainLoop():
 	readline.set_completer(comp.complete)
 	while True:
 		input	= raw_input('SMOD >').strip().split()
-		if(input[0] in Command.COMMANDS):
-			result 	= getattr(globals()['Command'](),input[0])(input)
+		if(input):
+			if(input[0] in Command.COMMANDS):
+				result 	= getattr(globals()['Command'](),input[0])(input)
 	
 	
