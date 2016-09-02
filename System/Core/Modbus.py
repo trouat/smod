@@ -1,6 +1,6 @@
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
-#logging.getLogger("scapy").setLevel(1)
+logging.getLogger("scapy").setLevel(1)
 import sys
 import Global
 sys.path.append(Global.mainPath + '/System/')
