@@ -66,7 +66,6 @@ class Module:
 				self.printLine('[+] UID on ' + ip + ' is : ' + str(i),bcolors.OKGREEN)
 				closeConnectionToTarget(c)
 			except Exception,e:
-				print e
 				closeConnectionToTarget(c)
 				pass
 
