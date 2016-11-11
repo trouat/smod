@@ -12,7 +12,7 @@ class Module:
 
 
 	info = {
-		'Name': 'DOS With Write All Coils',
+		'Name': 'DOS Write All Coils',
 		'Author': ['@enddo'],
 		'Description': ("DOS With Write All Coils"),
 
