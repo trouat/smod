@@ -26,8 +26,8 @@ root@kali:~/smod# python smod.py
              U  ||----w |
                 ||     ||
           --=[MODBUS Penetration Test FrameWork
-       --+--=[Version : 1.0.3
-       --+--=[Modules : 21
+       --+--=[Version : 1.0.4
+       --+--=[Modules : 23
        --+--=[Coder   : Farzin Enddo
           --=[github  : www.github.com/enddo
 
@@ -45,7 +45,9 @@ SMOD >show modules
  Modules                                       Description                                       
  -------                                       -----------                                       
  modbus/dos/arp                                DOS with Arp Poisoning                            
- modbus/dos/galilRIO                           DOS Galil RIO-47100                               
+ modbus/dos/galilRIO                           DOS Galil RIO-47100
+ modbus/dos/writeAllCoils                      DOS With Write All Coils                          
+ modbus/dos/writeAllRegister                   DOS With Write All Register Function 
  modbus/dos/writeSingleCoils                   DOS With Write Single Coil Function               
  modbus/dos/writeSingleRegister                DOS Write Single Register Function                
  modbus/function/fuzzing                       Fuzzing Modbus Functions                          
