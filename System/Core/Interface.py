@@ -70,7 +70,7 @@ class Command:
 		readline.parse_and_bind("tab: complete")
 		readline.set_completer(comp.complete)
 		while True:
-			input	= raw_input('SMOD ' + moduleName[0] + '(' + bcolors.OKBLUE + moduleName[-1] + bcolors.ENDC + ') >').strip().split()
+			input	= raw_input('SMOD ' + moduleName[0] + '(' + bcolors.OKBLUE + moduleName[-1] + bcolors.ENDC + ') > ').strip().split()
 			try:			
 				result 	= getattr(globals()['Command'](),input[0])(input,args[1])
 			except:
@@ -178,7 +178,7 @@ def mainLoop():
 	readline.parse_and_bind("tab: complete")
 	readline.set_completer(comp.complete)
 	while True:
-		input	= raw_input('SMOD >').strip().split()
+		input	= raw_input('SMOD > ').strip().split()
 		if(input):
 			if(input[0] in Command.COMMANDS):
 				result 	= getattr(globals()['Command'](),input[0])(input)
