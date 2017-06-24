@@ -15,10 +15,10 @@ conf.verb = 0
 import math
 
 # own constant definitions
-transId = 1;
-connection = None;
-timeout = 5;
-modport=502;
+transId = 1
+connection = None
+timeout = 5
+modport=502
 
 
 #
@@ -411,10 +411,12 @@ def connectToTarget(IP="127.0.0.1",port=modport):
 	try:
 		global connection	
 		s = socket.socket()
-		s.connect((IP,port)) # encapsulate into try/catch
+		s.connect((IP,int(port))) # encapsulate into try/catch
 		connection = StreamSocket(s,Raw)
 		return connection
 	except Exception,e:
+		print "Connection unsuccessful due to the following error :"
+		print e.message
 		return None
 def closeConnectionToTarget(c):
 	global connection
