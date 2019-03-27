@@ -1,9 +1,9 @@
-#smod
+# smod
 smod is a modular framework with every kind of diagnostic and offensive feature you could need in order to pentest modbus protocol. It is a full Modbus protocol implementation using Python and Scapy. This software could be run on Linux/OSX under python 2.7.x. 
 
 Feel free to make pull requests, if there's anything you feel we could do better.
 
-##Summery
+## Summery
 SCADA (Process Control Networks) based systems have moved from proprietary closed networks to open source solutions and TCP/IP enabled networks steadily over recent years. This has made them vulnerable to the same security vulnerabilities that face our traditional computer networks.
 
 The Modbus/TCP protocol was used as the reference protocol to display the effectiveness of the test bed in carrying out cyber attacks on a power system protocol. Modbus/TCP was chosen specifically for these reasons:
@@ -13,7 +13,7 @@ The Modbus/TCP protocol was used as the reference protocol to display the effect
 
 You can use this tool to vulnerability assessment a modbus protocol.
 
-##Demo
+## Demo
 Just a little demo showing off the basics
 ```
 root@kali:~/smod# python smod.py 
